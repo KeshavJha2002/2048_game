@@ -18,13 +18,40 @@ The main goal of the game is to create a simple,fun to play python game.
   - `left-arrow` : to move all the column to the most extreme left level possible in their respective row.
   - `right-arrow` : to move all the column to the most extreme right level possible in their respective row.
 
-## Class Structure
+## ClassList
+
+### Class `Board`
+
+- **Attributes:**
+  - `__board`: 4*4 integer matrix
+- **Methods:**
+  - ***Private methods:***
+    - __print_prompt()
+    - __adjust_row(self, row_ind, order)
+    - __adjust_col(self, col_ind, order)
+    - __generate_value_for_random_position(self)
+    - __reflect_move(self, input_move)
+    - __check_winner_or_loser(self)
+  - ***Public methods:***
+    - move_master(self)
+    - get_arrow_key()
+  - ***Class methods:***
+    - None
+  - ***Static methods:***
+    - __print_prompt()
+    - get_arrow_key()
+  - ***Instance methods:***
+    - __adjust_row(self, row_ind, order)
+    - __adjust_col(self, col_ind, order)
+    - __generate_value_for_random_position(self)
+    - __reflect_move(self, input_move)
+    - __check_winner_or_loser(self)
+    - - move_master(self)
 
 ## Functions List
 
-### Function 1
+### Function `__adjust_row(self, row_ind, order)`
 
-- **Name:** `__adjust_row`
 - **Params:**
   - `row_ind`: int
   - `order`: str
@@ -32,9 +59,8 @@ The main goal of the game is to create a simple,fun to play python game.
 - **Interfaces:** Private method
 - **Access Specifier:** Instance method
 
-### Function 2
+### Function `__adjust_col(self, col_ind, order)`
 
-- **Name:** `__adjust_col`
 - **Params:**
   - `col_ind`: int
   - `order`: str
@@ -42,38 +68,66 @@ The main goal of the game is to create a simple,fun to play python game.
 - **Interfaces:** Private method
 - **Access Specifier:** Instance method
 
-### Function 3
+### Function `__generate_value_for_random_position(self)`
 
-- **Name:** `__generate_value_for_random_position`
 - **Params:**
   - None
 - **Return Type:** None
 - **Interfaces:** Private method
 - **Access Specifier:** Instance method
 
-### Function 4
+### Function `__reflect_move(self, input_move)`
 
-- **Name:** `__reflect_move`
 - **Params:**
   - `input_move`: str
 - **Return Type:** None
 - **Interfaces:** Private method
 - **Access Specifier:** Instance method
 
-### Function 5
+### Function `__check_winner_or_loser(self)`
 
-- **Name:** `__check_winner_or_loser`
 - **Params:**
   - None
 - **Return Type:** str
 - **Interfaces:** Private method
 - **Access Specifier:** Instance method
 
-### Function 6
+### Function `__print_prompt()`
 
-- **Name:** `__print_prompt`
 - **Params:**
   - None
 - **Return Type:** str
 - **Interfaces:** Private method
 - **Access Specifier:** Static method
+
+### Function `get_arrow_key()`
+
+- **Params:**
+  - None
+- **Return Type:** str
+- **Interfaces:** Public method
+- **Access Specifier:** Static method
+
+### Function `print_board(self)`
+
+- **Params:**
+  - None
+- **Return Type:** None
+- **Interfaces:** Public method
+- **Access Specifier:** Instance method
+
+### Function `move_master(self)`
+
+- **Params:**
+  - None
+- **Return Type:** None
+- **Interfaces:** Public method
+- **Access Specifier:** Instance method
+
+### Function `main()`
+
+- **Params:**
+  - None
+- **Return Type:** None
+- **Interfaces:** Public method
+- **Access Specifier:** Global method

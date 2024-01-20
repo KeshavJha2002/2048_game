@@ -1,19 +1,6 @@
 import random
 import keyboard
 
-def get_arrow_key():
-    while True:
-        event = keyboard.read_event()
-        if event.event_type == keyboard.KEY_DOWN:
-            if event.name == 'up':
-                return 'Up'
-            elif event.name == 'down':
-                return 'Down'
-            elif event.name == 'left':
-                return 'Left'
-            elif event.name == 'right':
-                return 'Right'
-
 class Board:
 
     def __init__(self):
