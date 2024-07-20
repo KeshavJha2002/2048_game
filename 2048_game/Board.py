@@ -22,9 +22,11 @@ class Board:
         print("'Down arrow key' : Move Down")
         print("'Left arrow key' : Move Left")
         print("'Right arrow key' : Move Right")
-        print("Enter your move : ")
+        print("Enter your move : ", end='')
+        print(flush=True)
         try:
             input_move = Board.get_arrow_key()
+            print(input_move)
         except KeyboardInterrupt:
             print("\nExiting the game.")
             exit(0)
